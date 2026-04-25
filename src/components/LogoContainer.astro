@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
 import Logo from "~/assets/images/logo-pawstronaut.svg";
-import { siteSlogan } from "~/data/config.js";
+import { siteSlogan, siteName } from "~/data/config.js";
 ---
 
 <div class="flex items-center gap-2 lg:gap-6">
-	<Logo class="w-auto h-8 lg:h-12" />
+    <Logo class="w-auto h-8 lg:h-12" />
 
-	<div>
-		<h1 class="text-xl lg:text-4xl font-semibold">Pawstronaut</h1>
-		<p class="max-lg:hidden text-sm text-center italic">{siteSlogan}</p>
-	</div>
+    <div>
+        <h1 class="text-xl lg:text-4xl font-semibold">{siteName}</h1>
+        <p class="max-lg:hidden text-sm text-center italic">{siteSlogan}</p>
+    </div>
 </div>
